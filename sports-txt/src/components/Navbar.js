@@ -41,7 +41,7 @@ const Navbar = () => {
           </ul>
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <Link className="nav-link" to="/login">Login</Link>
+              <Link className="btn btn-outline-custom ms-2" to="/login">Login</Link>
             </li>
             <li className="nav-item">
               <Link className="btn btn-outline-custom ms-2" to="/signup">Sign Up</Link>

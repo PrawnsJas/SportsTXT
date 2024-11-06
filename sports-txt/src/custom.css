@@ -1,3 +1,31 @@
+@font-face {
+    font-family: 'Redwing-Light';
+    src: url('./fonts/Redwing-Light.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Redwing-Medium';
+    src: url('./fonts/Redwing-Medium.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Geliat-Bold';
+    src: url('./fonts/Geliat-ExtraBold.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Geliat-Light';
+    src: url('./fonts/Geliat-ExtraLight.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
 :root {
     --main-blue: #0F549D;
     --main-red: #E0122A;
@@ -5,6 +33,30 @@
     --light-blue: #B3D4FC;
     --grey: #E8E7E8;
     --white: #FFFFFF;
+  }
+
+  body {
+    font-family: 'Geliat-Bold', sans-serif;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container, .container-fluid {
+    --bs-gutter-x: 0; /* Removes left and right padding */
+  }
+  
+
+  .container {
+    width: 100%; 
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  p {
+    font-family: 'Geliat-Light', sans-serif;
   }
   
   /* Background Colors */
@@ -40,11 +92,7 @@
   .text-dark {
     color: var(--dark-blue) !important;
   }
-  
-  .text-light {
-    color: var(--light-blue) !important;
-  }
-  
+    
   .text-grey {
     color: var(--grey) !important;
   }
@@ -93,9 +141,22 @@
     color: #FFFFFF;
     border-color: #E0122A; 
   }
+
+  .btn-outline-blue{
+    color: #000000; 
+    background-color: transparent;
+    border: 2px solid var(--main-blue); 
+  }
+  
+  .btn-outline-blue:hover {
+    background-color: var(--dark-blue); 
+    color: #FFFFFF;
+    border-color: var(--dark-blue); 
+  }
   
 /* Navbar Custom Style */
 .navbar-custom {
+    font-family: 'Geliat-Light', sans-serif;
     background-color: #333; 
     color: var(--white);
   }
@@ -128,6 +189,95 @@
     height: auto;
     max-height: 40px; 
   }
+
+/* Home Page Sections */
+    .masthead,
+    .alternating,
+    .platform {
+    padding: 30px; 
+    }
+
+    .masthead {
+        background-color: #E0122A;
+        
+    }
+
+    .alternating {
+        width: 100%;
+        align-items: center; /* Center vertically */
+        justify-content: center;
+        
+    }
+
+    .section-right,
+    .section-left {
+        display: flex;
+        align-items: center; /* Center vertically */
+        justify-content: center; /* Center horizontally */
+    }
+
+    .col-md-6 .sec-img {
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+    }
+
+    .section-img {
+        width: 100%; /* Ensure the image fits its container */
+        max-width: 80%; /* Limits the image size, adjust percentage as needed */
+        height: auto; /* Maintains aspect ratio */
+        object-fit: cover; /* Ensures the image scales properly */
+    }
+
+    /* Platform cards */
+    .card {
+        border: none;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    
+    .card-img-top {
+        width: 100%;
+        height: 200px; /* Adjust this value based on your design */
+        object-fit: cover; /* Makes sure the image covers the space without distorting */
+    }
+    
+    .card-body {
+        padding: 20px;
+    }
+    
+    .card-title {
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
+    
+    .card-text {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+    
+    /* Shadow effect for the cards */
+    .card.shadow {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.3s ease-in-out;
+    }
+    
+    .card.shadow:hover {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    
+
+    .cta-block {
+        padding: 20px;
+    }
+
+    .masthead section,
+    .alternating section,
+    .platform section {
+    padding: 40px;
+    padding-top: 20px;
+    }
+
   
   
   
@@ -136,9 +286,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: stretch; /* Ensures both sections stretch to fill the container's height */
+    align-items: stretch; 
     width: 100%;
-    height: 100vh; /* Ensure the container takes the full height of the viewport */
+    height: 100vh; 
   }
   
   .contact-left,
@@ -174,11 +324,6 @@
     border-radius: 8px;
     width: 80%;
     opacity: 0.95; /* 95% opacity */
-  }
-  
-  h2 {
-    color: #fff;
-    font-size: 1.5rem;
   }
   
   address {
