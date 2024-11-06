@@ -1,26 +1,31 @@
 import React from 'react';
 import '../custom.css';
+import img1 from '../assets/AI_ John.jpg';
+import img2 from '../assets/AI_ Jane.jpg';
+import img3 from '../assets/AI_ Alice.jpg';
 
 const AboutUs = () => {
   return (
     <div className="about-us-container">
       {/* Section 1: Company Introduction */}
-      <section className="about-company-intro">
-        <div className="container">
-          <h2 className="about-section-title">About SportsTXT</h2>
-          <p>
-            SportsTXT is an initiative from NMS Productions BV, a division of
-            New Media Services, a global company specializing in delivering
-            intelligent outsourcing services through a combination of machine
-            learning and human-powered activities.
-          </p>
-          <p>
-            From fans to brands to individual content creators, NMSP designs
-            and builds collaborative online platforms for our users to
-            communicate, connect, learn, and share.
-          </p>
+     
+        <div className="masthead text-light">
+           <section className="text-center text-light">
+            <h2 className="about-section-title">About SportsTXT</h2>
+            <p>
+              SportsTXT is an initiative from NMS Productions BV, a division of
+              New Media Services, a global company specializing in delivering
+              intelligent outsourcing services through a combination of machine
+              learning and human-powered activities.
+            </p>
+            <p>
+              From fans to brands to individual content creators, NMSP designs
+              and builds collaborative online platforms for our users to
+              communicate, connect, learn, and share.
+            </p>
+          </section>
         </div>
-      </section>
+      
 
       {/* Section 2: Key People */}
       <section className="about-key-people">
@@ -31,7 +36,7 @@ const AboutUs = () => {
             <div className="col-md-3">
               <div className="about-card">
                 <img
-                  src="https://via.placeholder.com/150"
+                  src={img1}
                   className="about-card-img-top"
                   alt="Key person"
                 />
@@ -44,7 +49,7 @@ const AboutUs = () => {
             <div className="col-md-3">
               <div className="about-card">
                 <img
-                  src="https://via.placeholder.com/150"
+                  src={img2}
                   className="about-card-img-top"
                   alt="Key person"
                 />
@@ -57,7 +62,7 @@ const AboutUs = () => {
             <div className="col-md-3">
               <div className="about-card">
                 <img
-                  src="https://via.placeholder.com/150"
+                  src={img3}
                   className="about-card-img-top"
                   alt="Key person"
                 />

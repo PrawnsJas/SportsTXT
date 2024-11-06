@@ -19,8 +19,13 @@ const FeaturesPage = () => {
 
   return (
     <div className="features-container">
-      <h1 className="text-center">Features</h1>
-      <p className="mb-5">On SportsTXT, you’ll find a great mix of features enabling sports clubs and athletes to connect directly with their fans.</p>
+      <div className="masthead text-light">
+        <section className="text-center text-light">
+          <h1 className="text-center">Features</h1>
+          <p className="mb-5">On SportsTXT, you’ll find a great mix of features enabling sports clubs and athletes to connect directly with their fans.</p>         
+        </section>
+
+      </div>
 
       {/* Carousel Section */}
       <div className="carousel-container">

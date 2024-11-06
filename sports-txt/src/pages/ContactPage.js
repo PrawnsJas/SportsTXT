@@ -16,9 +16,10 @@ const ContactPage = () => {
             style={{ height: '40px', width: 'auto', marginRight: '10px' }} 
             className="d-inline-block align-top"
           />
-        <address>
+          <p>NMS PRODUCTIONS EUROPE B.V.</p>
+{/*         <address>
           NMS PRODUCTIONS EUROPE B.V.<br />
-        </address>
+        </address> */}
       </div>
 
       {/* Right section - Image background */}
