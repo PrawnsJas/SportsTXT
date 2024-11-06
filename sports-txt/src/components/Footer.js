@@ -4,31 +4,44 @@ import logo from '../assets/logo.png'; // Import the logo image
 
 const Footer = () => {
   return (
-    <footer className="bg-light text-black py-4">
-      <div className="container text-center">
-        <img src={logo} alt="Logo" className="mb-3" style={{ width: '150px' }} />       
-        <div className="mb-3">
-          <a href="/privacy-policy" className="text-black mx-2">Privacy Policy</a>
-          <a href="/terms-of-service" className="text-black mx-2">Terms of Service</a>
-          <a href="/contact" className="text-black mx-2">Contact</a>
+    <footer className="footer">
+      <div className="footer-container">
+        <div className="footer-logo">
+          <img src={logo} alt="Company Logo" className="footer-logo-img" />
+          <p className="footer-description">Bringing quality services to your doorstep.</p>
         </div>
 
-        <div>
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-black mx-2">
-            <i className="bi bi-facebook" style={{ fontSize: '1.5rem' }}></i>
-          </a>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-black mx-2">
-            <i className="bi bi-twitter" style={{ fontSize: '1.5rem' }}></i>
-          </a>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-black mx-2">
-            <i className="bi bi-instagram" style={{ fontSize: '1.5rem' }}></i>
-          </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-black mx-2">
-            <i className="bi bi-linkedin" style={{ fontSize: '1.5rem' }}></i>
-          </a>
+        <div className="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/features">Features</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
         </div>
-        <div>
-        <p className="mb-0">© {new Date().getFullYear()} Your Company. All Rights Reserved.</p>
+
+        <div className="footer-social">
+          <h4>Follow Us</h4>
+          <ul className="social-icons">
+            <li><a href="/"  className="social-icon"><i className="bi bi-facebook"></i></a></li>
+            <li><a href="/"  className="social-icon"><i className="bi bi-twitter"></i></a></li>
+            <li><a href="/"  className="social-icon"><i className="bi bi-linkedin"></i></a></li>
+            <li><a href="/"  className="social-icon"><i className="bi bi-instagram"></i></a></li>
+            <li><a href="/"  className="social-icon"><i className="bi bi-youtube"></i></a></li>
+          </ul>
+        </div>
+
+        <div className="footer-contact">
+          <h4>Contact Info</h4>
+          <p><i className="bi bi-envelope"></i> support@sportstxt.com</p>
+          <p><i className="bi bi-geo-alt"></i> NMS PRODUCTIONS EUROPE B.V.<br />Herengracht 257, 1016 BJ,<br />Amsterdam, The Netherlands</p>
+        </div>
+      </div>
+
+      <div className="footer-bottom">
+        <p>&copy; {new Date().getFullYear()} SportsTXT. All Rights Reserved.</p>
+        <div className="footer-terms">
+          <a href="/">Terms of Service</a> | <a href="/">Privacy Policy</a>
         </div>
       </div>
     </footer>
