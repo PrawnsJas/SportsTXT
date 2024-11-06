@@ -143,15 +143,18 @@
   }
 
   .btn-outline-blue{
-    color: #000000; 
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    color: var(--main-blue); 
     background-color: transparent;
     border: 2px solid var(--main-blue); 
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
   }
   
   .btn-outline-blue:hover {
     background-color: var(--dark-blue); 
     color: #FFFFFF;
-    border-color: var(--dark-blue); 
   }
   
 /* Navbar Custom Style */
@@ -268,7 +271,7 @@
     
 
     .cta-block {
-        padding: 20px;
+        padding: 2rem 0;
     }
 
     .masthead section,
@@ -499,4 +502,109 @@
   .footer-terms a:hover {
     text-decoration: underline;
   }
+
+  /* General Styles for About Page */
+  .about-us-container {
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack sections vertically */
+    align-items: center; /* Center the items horizontally */
+    justify-content: center; /* Center the items vertically if needed */
+    padding: 0 15px;
+    text-align: center; /* Center text content inside sections */
+  }
+
+  .about-us-container > section {
+    max-width: 1200px; /* Optionally limit the width of sections */
+    width: 100%; /* Allow sections to take up full width of their container */
+    margin: 20px 0; /* Add vertical margin between sections */
+  }
   
+  /* Section Title Styling */
+  .about-section-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  /* Company Introduction Section */
+  .about-company-intro {
+    padding: 3rem 0;
+  }
+  
+  /* Key People Section */
+  .about-key-people {
+    padding: 3rem 0;
+  }
+  
+  .about-key-people .about-card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .about-key-people .about-card:hover {
+    transform: translateY(-5px); /* Hover effect for cards */
+  }
+  
+  .about-key-people .about-card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .about-key-people .about-card-body {
+    padding: 15px;
+  }
+  
+  .about-key-people .about-card-title {
+    font-weight: 500;
+    font-size: 1.25rem;
+  }
+  
+  .about-key-people .about-card-text {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Adjust columns for horizontal layout */
+  .about-row.justify-content-between {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  /* Ensure cards are equal width */
+  .about-key-people .col-md-3 {
+    flex: 1 1 30%; /* Flex to fit three cards per row */
+    margin: 0 10px;
+  }
+  
+  /* CTA Section */
+  .about-cta-block {
+    padding: 2rem 0;
+    background-color: #ffffff;
+  }
+  
+  .about-cta-block .about-btn {
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    border: 2px solid #007bff;
+    color: #007bff;
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  .about-cta-block .about-btn:hover {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  @media (max-width: 768px) {
+    .about-us-container {
+      padding: 0 15px; /* Ensure some padding for smaller screens */
+    }
+  }

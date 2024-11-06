@@ -1,14 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import '../custom.css';
 
 const AboutUs = () => {
   return (
     <div className="about-us-container">
       {/* Section 1: Company Introduction */}
-      <section className="company-intro">
-        <div className="container py-5">
-          <h2 className="section-title">About SportsTXT</h2>
+      <section className="about-company-intro">
+        <div className="container">
+          <h2 className="about-section-title">About SportsTXT</h2>
           <p>
             SportsTXT is an initiative from NMS Productions BV, a division of
             New Media Services, a global company specializing in delivering
@@ -24,47 +23,47 @@ const AboutUs = () => {
       </section>
 
       {/* Section 2: Key People */}
-      <section className="key-people">
-        <div className="container py-5">
-          <h2 className="section-title">Key People</h2>
-          <div className="row">
+      <section className="about-key-people">
+        <div className="container">
+          <h2 className="about-section-title">Key People</h2>
+          <div className="about-row justify-content-between">
             {/* Replace with actual key people info */}
-            <div className="col-md-4">
-              <div className="card">
+            <div className="col-md-3">
+              <div className="about-card">
                 <img
                   src="https://via.placeholder.com/150"
-                  className="card-img-top"
+                  className="about-card-img-top"
                   alt="Key person"
                 />
-                <div className="card-body">
-                  <h5 className="card-title">John Doe</h5>
-                  <p className="card-text">CEO, NMS Productions BV</p>
+                <div className="about-card-body">
+                  <h5 className="about-card-title">John Doe</h5>
+                  <p className="about-card-text">CEO, NMS Productions BV</p>
                 </div>
               </div>
             </div>
-            <div className="col-md-4">
-              <div className="card">
+            <div className="col-md-3">
+              <div className="about-card">
                 <img
                   src="https://via.placeholder.com/150"
-                  className="card-img-top"
+                  className="about-card-img-top"
                   alt="Key person"
                 />
-                <div className="card-body">
-                  <h5 className="card-title">Jane Smith</h5>
-                  <p className="card-text">COO, NMS Productions BV</p>
+                <div className="about-card-body">
+                  <h5 className="about-card-title">Jane Smith</h5>
+                  <p className="about-card-text">COO, NMS Productions BV</p>
                 </div>
               </div>
             </div>
-            <div className="col-md-4">
-              <div className="card">
+            <div className="col-md-3">
+              <div className="about-card">
                 <img
                   src="https://via.placeholder.com/150"
-                  className="card-img-top"
+                  className="about-card-img-top"
                   alt="Key person"
                 />
-                <div className="card-body">
-                  <h5 className="card-title">Alice Johnson</h5>
-                  <p className="card-text">CTO, NMS Productions BV</p>
+                <div className="about-card-body">
+                  <h5 className="about-card-title">Alice Johnson</h5>
+                  <p className="about-card-text">CTO, NMS Productions BV</p>
                 </div>
               </div>
             </div>
@@ -72,16 +71,13 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* Section 3: Call to Action (CTA) */}
-      <section className="cta-block">
-        <div className="container text-center py-5">
-          <h2>Get in touch</h2>
-          <p>Build a Unified Community with SportsTXT</p>
-          <Link to="/contact" className="btn btn-primary">
-            Contact Us
-          </Link>
-        </div>
-      </section>
+      {/* CTA Block */}
+      <div className="about-cta-block border-top">
+        <section className="text-center my-5">
+            <h2>Get in touch</h2>
+            <button className="btn btn-outline-blue">Build A Unified Community with SportsTXT</button>
+        </section>
+      </div>
     </div>
   );
 };

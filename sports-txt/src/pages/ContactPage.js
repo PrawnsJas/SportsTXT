@@ -50,11 +50,6 @@ const ContactPage = () => {
           </form>
         </div>
       </div>
-
-      {/* CTA Block */}
-      <section className="cta-block text-center mt-5">
-        <p>Build A Unified Community with SportsTXT</p>
-      </section>
     </div>
   );
 };

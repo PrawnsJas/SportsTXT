@@ -55,12 +55,14 @@ const FeaturesPage = () => {
       </section>
 
       {/* CTA Block */}
-      <section className="text-center mt-5">
-        <h2>Get in Touch</h2>
-        <p>Build A Unified Community with SportsTXT</p>
-        <button className="btn btn-primary">Contact Us</button>
-      </section>
-    </div>
+      <div className="cta-block border-top">
+        <section className="text-center my-5">
+            <h2>Get in touch</h2>
+            <button className="btn btn-outline-blue">Build A Unified Community with SportsTXT</button>
+          </section>
+        </div>
+      </div>
+    
   );
 };
 
