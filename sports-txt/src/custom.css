@@ -1,0 +1,124 @@
+:root {
+    --main-blue: #0F549D;
+    --main-red: #E0122A;
+    --dark-blue: #0A3972;
+    --light-blue: #B3D4FC;
+    --grey: #E8E7E8;
+    --white: #FFFFFF;
+  }
+  
+  /* Background Colors */
+  .bg-primary {
+    background-color: var(--main-blue) !important;
+  }
+  
+  .bg-accent {
+    background-color: var(--main-red) !important;
+  }
+  
+  .bg-dark {
+    background-color: var(--dark-blue) !important;
+  }
+  
+  .bg-light {
+    background-color: var(--light-blue) !important;
+  }
+  
+  .bg-grey {
+    background-color: var(--grey) !important;
+  }
+  
+  /* Text Colors */
+  .text-primary {
+    color: var(--main-blue) !important;
+  }
+  
+  .text-accent {
+    color: var(--main-red) !important;
+  }
+  
+  .text-dark {
+    color: var(--dark-blue) !important;
+  }
+  
+  .text-light {
+    color: var(--light-blue) !important;
+  }
+  
+  .text-grey {
+    color: var(--grey) !important;
+  }
+  
+  /* Button Styles */
+  .btn-primary {
+    background-color: var(--main-blue);
+    border-color: var(--main-blue);
+    color: var(--white);
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--dark-blue);
+    border-color: var(--dark-blue);
+  }
+  
+  .btn-accent {
+    background-color: var(--main-red);
+    border-color: var(--main-red);
+    color: var(--white);
+  }
+  
+  .btn-accent:hover {
+    background-color: #a50f1d; 
+    border-color: #a50f1d;
+  }
+  
+  /* Border Colors */
+  .border-primary {
+    border-color: var(--main-blue) !important;
+  }
+  
+  .border-accent {
+    border-color: var(--main-red) !important;
+  }
+  
+  
+.btn-outline-custom {
+    color: #FFFFFF; 
+    background-color: transparent;
+    border: 2px solid #FFFFFF; 
+  }
+  
+  .btn-outline-custom:hover {
+    background-color: #E0122A; 
+    color: #FFFFFF;
+    border-color: #E0122A; 
+  }
+  
+  /* Navbar Custom Style */
+.navbar-custom {
+    background-color: var(--main-red); /* Main Red */
+    color: var(--white);
+  }
+  
+  .navbar-custom .navbar-brand,
+  .navbar-custom .nav-link {
+    color: var(--white); /* White text on red background */
+  }
+  
+  .navbar-custom .nav-link:hover {
+    color: #6b0a14; /* Light Blue on hover for links */
+  }
+  
+  .navbar-custom .navbar-toggler {
+    border-color: var(--white); /* White border for toggler */
+  }
+  
+  .navbar-custom .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+
+  .navbar-custom .container-fluid {
+    padding-left: 10%; 
+    padding-right: 10%; 
+  }
+  
