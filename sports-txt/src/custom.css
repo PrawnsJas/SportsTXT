@@ -42,6 +42,10 @@
     padding: 0;
   }
 
+  .accordion-body {
+    font-family: 'Geliat-Light', sans-serif;
+  }
+
   .container, .container-fluid {
     --bs-gutter-x: 0; /* Removes left and right padding */
   }
@@ -608,3 +612,129 @@
       padding: 0 15px; /* Ensure some padding for smaller screens */
     }
   }
+
+
+    /* General Styles for features Page */
+    .features-container {
+        display: flex;
+        flex-direction: column;
+        padding: 0 15px;
+        text-align: center;
+      }
+      
+      .features-container > section {
+        max-width: 1200px;
+        width: 100%;
+        margin: 20px 0;
+      }
+      
+      .carousel-container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .carousel-slides {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+      }
+
+      .features-card p {
+        font-size: 20px; 
+        line-height: 1.6;
+        color: #333; /* You can also adjust the text color if needed */
+        margin-top: 10px;
+        text-align: left; /* Optional: Adjusts text alignment */
+        overflow: hidden;
+      }
+      
+      
+      .features-card {
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        text-align: center;
+        margin: 0 15px;
+        font-size: 14px;
+        flex: 1;
+        max-width: calc(33.33% - 30px);
+        white-space: normal;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        transition: box-shadow 0.3s ease, transform 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        min-height: 200px;
+      }
+      
+      .features-card:hover {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        transform: scale(1.05);
+      }
+      
+      .carousel-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.2);
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        z-index: 1;
+        color: white;
+        font-size: 20px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .prev {
+        left: 0;
+      }
+      
+      .next {
+        right: 0;
+      }
+      
+      .arrow-icon {
+        font-size: 24px;
+      }
+      
+      .dots-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+      }
+      
+      .dot {
+        width: 12px;
+        height: 12px;
+        margin: 0 5px;
+        border-radius: 50%;
+        background-color: #ccc;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      
+      .dot.active {
+        background-color: #007bff;
+      }
+      
+      @media screen and (max-width: 1024px) {
+        .card {
+          max-width: calc(33.33% - 20px);
+        }
+      }
+      
+      @media screen and (max-width: 768px) {
+        .card {
+          max-width: 100%;
+        }
+      }
+      

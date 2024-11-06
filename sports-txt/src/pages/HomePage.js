@@ -76,7 +76,7 @@ const HomePage = () => {
         
       {/* The Platform of Firsts Section */}
       <div className="platform">
-        <section className="my-5">
+        <section>
           <h1 className="text-center mb-5">The Platform of Firsts</h1>
           <div className="row">
             <div className="col-md-3 mb-4">
